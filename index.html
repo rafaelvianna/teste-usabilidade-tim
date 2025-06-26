@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de usabilidade 1</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -18,7 +19,98 @@
         </section>
     </header>
 
-    <section class="carrossel info">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide tim-black">
+                <div class="ofertas">
+                    <h2>TIM black</h2>
+                    <p>Aproveite muita internet e uma assinatura de streaming incluída</p>
+                    <img src="./img/tim-black.png" alt="">
+                    <img src="./img/oferta-tim-black.svg" alt="">
+
+                    <div class="links-container">
+                        <a href="#" class="btn secondary-white">Conferir ofertas</a>
+                        <a href="#" class="btn primary-white">Contratar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide ultra-fibra">
+                <div class="ofertas">
+                    <h2>TIM Ultrafibra</h2>
+                    <p>Internet residencial com mais estabilidade e ultra velocidade</p>
+                    <img src="./img/kv-ultrafibra.png" class='kv-img' alt="">
+                    <img src="./img/oferta-ultrafibra.svg" class='oferta-img' alt="">
+
+                    <div class="links-container">
+                        <a href="#" class="btn secondary-white">Conferir ofertas</a>
+                        <a href="#" class="btn primary-white">Contratar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide pre">
+                <div class="ofertas">
+                    <h2>TIM Pré XIP</h2>
+                    <p>Recarregue e receba Pix na conta e WhatsApp ilimitado para tudo o mês todo</p>
+                    <img src="./img/kv-pre.png" class='kv-img' alt="">
+                    <img src="./img/oferta-pre.svg" class='oferta-img' alt="">
+
+                    <div class="links-container">
+                        <a href="#" class="btn secondary-white">Conferir ofertas</a>
+                        <a href="#" class="btn primary-white">Contratar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide controle">
+                <div class="ofertas">
+                    <h2>TIM Pré XIP</h2>
+                    <p>Recarregue e receba Pix na conta e WhatsApp ilimitado para tudo o mês todo</p>
+                    <img src="./img/kv-controle.png" class='kv-img' alt="">
+                    <img src="./img/oferta-controle.svg" class='oferta-img' alt="">
+
+                    <div class="links-container">
+                        <a href="#" class="btn secondary-white">Conferir ofertas</a>
+                        <a href="#" class="btn primary-white">Contratar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide tim-black">
+                <div class="ofertas">
+                    <h2>TIM Black Família</h2>
+                    <p>Aproveite muita internet e uma assinatura de streaming incluída</p>
+                    <img src="./img/kv-black.png" alt="">
+                    <img src="./img/oferta-black.svg" alt="">
+
+                    <div class="links-container">
+                        <a href="#" class="btn secondary-white">Conferir ofertas</a>
+                        <a href="#" class="btn primary-white">Contratar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+         <div class="swiper-controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <!-- <section class="carrossel info">
         <div class="item-1">
             <img src="./img/card-principal.svg" alt="imagem da oferta">
             <div class="container-links">
@@ -26,7 +118,7 @@
                 <a href="#" class="btn primary-white">Contratar</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="info m30">
         <span>Lançamento Samsung</span>
@@ -88,10 +180,10 @@
         </ul>
     </section>
 
-    <section class="info">
+    <section class="info app">
         <span>Novo app Meu TIM</span>
         <h2>Encontre tudo que você precisa em um app mais rápido, moderno, intuitivo</h2>
-        <a href="#">Acessar Meu TIM</a>
+        <a href="#" class="btn primary-white">Acessar Meu TIM</a>
 
         <div>
             <img src="./img/M2.png" alt="Imagem da oferta">
@@ -100,7 +192,7 @@
         </div>
     </section>
 
-    <section class="info">
+    <section class="info reacher">
         <h2>Serviços para deixar seu plano ainda mais a sua cara</h2>
 
         <div>
@@ -111,12 +203,12 @@
         </div>
     </section>
 
-    <section class="info">
+    <section class="info oferta">
         <img src="./img/m13.png" alt="Imagem da oferta">
         <span>Surpreenda-se com o atendimento da TIM</span>
         <h2>Imagine as possibilidades de ter um atendimento três vezes premiado</h2>
         <p>Conheça os prêmios que o nosso atendimento recebeu e venha se surpreender!</p>
-        <a href="#">Conhecer prêmios</a>
+        <a href="#" class="btn primary-white">Conhecer prêmios</a>
     </section>
 
     <section class="faq">
@@ -125,9 +217,11 @@
                 <a href="#">Para você</a>
                 <img src="./img/arrow-chevron-top.svg" alt="arrow">
             </strong>
-            <a href="#">TIM para você</a>
-            <a href="#">Portabilidade</a>
-            <a href="#">Loja TIM</a>
+            <div class="links">
+                <a href="#">TIM para você</a>
+                <a href="#">Portabilidade</a>
+                <a href="#">Loja TIM</a>
+            </div>
         </div>
         <div>
             <strong>
@@ -154,12 +248,10 @@
     </section>
 
     <footer>
-        <img src="./img/logo-tim.svg" alt="logo tim">
-        <h2>App Meu TIM</h2>
-        <p>Aproveite os benefícios e a comodidade do app Meu TIM!</p>
-        <div>
-            <img src="./img/apple-playstore.svg" alt="Apple">
-        </div>
+        <img src="./img/footer-img.svg" alt="logo tim">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
